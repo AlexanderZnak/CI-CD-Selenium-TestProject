@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Text;
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium;			
-using OpenQA.Selenium.Firefox;	
-using OpenQA.Selenium.Chrome;	
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 
-namespace CI_CD_Selenium_TestProject
+namespace CI_CD_Selenium_TestProject.Tests2
 {
     /// <summary>
     /// Summary description for MySeleniumTests
@@ -25,7 +24,7 @@ namespace CI_CD_Selenium_TestProject
 
         [TestMethod]
         [TestCategory("Chrome")]
-        public void TheBingSearchTest()
+        public void SeleniumBingTest()
         {
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             driver.Navigate().GoToUrl(appURL + "/");

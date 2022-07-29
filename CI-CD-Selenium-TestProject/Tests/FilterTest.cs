@@ -21,7 +21,7 @@ namespace CI_CD_Selenium_TestProject.Tests
 
         [TestMethod]
         [TestCategory("Chrome")]
-        public void TheBingSearchTest()
+        public void SeleniumFilterTest()
         {
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             driver.Navigate().GoToUrl(appURL + "/");
